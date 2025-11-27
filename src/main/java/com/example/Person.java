@@ -2,27 +2,29 @@ package com.example;
 
 public class Person {
 
-    private int id;
-    private String firstName;
-    private String lastName;
+    private String FirstName;
+    private String LastName;
 
-    public Person(int id, String firstName, String lastName) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
+    public Person() {}
 
-    public int getID() {
-        return id;
+    public Person(String firstName, String lastName) {
+        this.FirstName = firstName;
+        this.LastName = lastName;
     }
 
     public String getFirstName() {
-        return firstName;
+        return FirstName;
     }
 
     public String getLastName() {
-        return lastName;
+        return LastName;
     }
 
+    public void setFirstName(String firstName) {
+        this.FirstName = firstName;
+    }
 
+    public void setLastName(String lastName) {
+        this.LastName = lastName;
+    }
 }
